@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:paddingTop="32dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:lineSpacingExtra="3dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:textColor="@color/black"
+        android:text="Hello! \nJohn Adam"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:elevation="12dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:orientation="vertical"
+                android:background="@drawable/dashboardcurve"
+                android:layout_width="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/uploadprep"
+                    android:src="@drawable/prescription"
+                    android:layout_margin="20dp"/>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textStyle="bold"
+                android:textColor="#696969"
+                android:textSize="16dp"
+                android:text="Upload Prescription"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:elevation="12dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:orientation="vertical"
+                android:background="@drawable/dashboardcurve"
+                android:layout_width="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/category"
+                    android:src="@drawable/mycategory"
+                    android:layout_margin="20dp"/>
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#696969"
+                android:layout_marginTop="6dp"
+                android:text="Category"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:elevation="12dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:orientation="vertical"
+                android:background="@drawable/dashboardcurve"
+                android:layout_width="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/labtest"
+                    android:src="@drawable/labtest"
+                    android:layout_margin="20dp"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textStyle="bold"
+                android:textColor="#696969"
+                android:textSize="16dp"
+                android:text="Lab Test"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:elevation="12dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:orientation="vertical"
+                android:background="@drawable/dashboardcurve"
+                android:layout_width="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/dietplan"
+                    android:src="@drawable/dietplan"
+                    android:layout_margin="20dp"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#696969"
+                android:layout_marginTop="6dp"
+                android:text="Diet Plan"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -5,8 +5,23 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/cornerbtn.xml" value="0.1245" />
         <entry key="app/src/main/res/drawable-v24/myborder.xml" value="0.1245" />
+        <entry key="app/src/main/res/drawable/dashboardcurve.xml" value="0.1245" />
+        <entry key="app/src/main/res/layout/activity_dash_board.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.21381683349609376" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23697916666666666" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.21014048258463539" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/activity_shipping.xml" value="0.21079508463541666" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/activity_upload.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/app_bar_dash_board.xml" value="0.21398417154947916" />
+        <entry key="app/src/main/res/layout/content_dash_board.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19988505045572919" />
+        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/nav_header_dash_board.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/menu/dash_board.xml" value="0.23697916666666666" />
       </map>
     </option>
   </component>

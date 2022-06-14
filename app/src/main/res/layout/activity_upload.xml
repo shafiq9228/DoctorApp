@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".UploadActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="How do you want to upload?"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:elevation="12dp"
+                android:id="@+id/camerabtn"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:orientation="vertical"
+                android:background="@drawable/dashboardcurve"
+                android:layout_width="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cameraicon"
+                    android:layout_margin="20dp"/>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textStyle="bold"
+                android:textColor="#696969"
+                android:textSize="16dp"
+                android:text="Camera"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:elevation="12dp"
+                android:id="@+id/gallerybtn"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:orientation="vertical"
+                android:background="@drawable/dashboardcurve"
+                android:layout_width="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/gallery"
+                    android:layout_margin="20dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#696969"
+                android:layout_marginTop="6dp"
+                android:text="Gallery"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
