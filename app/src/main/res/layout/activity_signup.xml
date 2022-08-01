@@ -7,20 +7,16 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="#332EAFF0"
-
     tools:context=".Login">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logindoc"/>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
+        android:layout_marginHorizontal="12dp"
         android:layout_marginVertical="10dp"
-        android:text="Sign Up"
+        android:text="Add Details"
         android:textColor="#000000"
         android:textSize="24dp"
         android:fontFamily="@font/nunitoextrabold" />
@@ -29,8 +25,10 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
+        android:layout_marginHorizontal="16dp"
         android:layout_marginVertical="10dp"
+        android:id="@+id/memail"
+        android:enabled="false"
         android:background="@drawable/selectbtn1"
         android:elevation="10dp"
         android:padding="15dp"
@@ -43,76 +41,79 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
+        android:layout_marginHorizontal="12dp"
         android:layout_marginVertical="10dp"
         android:background="@drawable/selectbtn1"
         android:fontFamily="@font/nunitomedium"
+        android:id="@+id/mmobile"
         android:elevation="10dp"
         android:padding="15dp"
-        android:hint="Enter Password"
+        android:hint="Enter Mobile"
         android:text=""
         android:textColorHint="#99000000"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
+        android:layout_marginHorizontal="12dp"
         android:layout_marginVertical="10dp"
         android:background="@drawable/selectbtn1"
+        android:id="@+id/mage"
         android:fontFamily="@font/nunitomedium"
         android:elevation="10dp"
         android:padding="15dp"
-        android:hint="Enter Password"
+        android:hint="Enter Age"
         android:text=""
         android:textColorHint="#99000000"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
+        android:layout_marginHorizontal="12dp"
+        android:id="@+id/maddress"
         android:layout_marginVertical="10dp"
         android:background="@drawable/selectbtn1"
         android:fontFamily="@font/nunitomedium"
         android:elevation="10dp"
         android:padding="15dp"
-        android:hint="Enter Password"
+        android:hint="Enter Address"
         android:text=""
         android:textColorHint="#99000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:id="@+id/malecb"
+            android:text="Male"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/femalecb"
+            android:text="Female"/>
+
+    </LinearLayout>
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
+        android:layout_marginHorizontal="12dp"
         android:layout_marginTop="20dp"
         android:elevation="10dp"
         android:background="@drawable/selectbtn2"
-        android:text="Sign Up"
-        android:textAllCaps="false"
+        android:text="Submit"
+        android:textAllCaps="true"
+        android:id="@+id/sumbit"
         android:textColor="@color/white"
         android:textSize="16dp"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:gravity="center">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Already have an account?"
-            android:textSize="12dp"
-            android:textColor="#000000"
-            android:fontFamily="@font/nunitolight"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" Login"
-            android:textSize="12dp"
-            android:textColor="#CC5543FF"
-            android:fontFamily="@font/nunitolight"/>
-
-    </LinearLayout>
 
 </LinearLayout>

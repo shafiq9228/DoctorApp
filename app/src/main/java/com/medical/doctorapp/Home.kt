@@ -1,17 +1,17 @@
 package com.medical.doctorapp
 
 import android.content.Intent
-import android.icu.util.ULocale
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.tasks.OnCompleteListener
+import com.google.firebase.auth.FirebaseAuth
 import java.util.*
 
 class Home : AppCompatActivity() {
@@ -22,6 +22,7 @@ class Home : AppCompatActivity() {
     lateinit var mealbtn: LinearLayout
     lateinit var bookdoctorbtn: LinearLayout
     lateinit var logout: ImageView
+    lateinit var auth: FirebaseAuth
     private var mGoogleSignInClient: GoogleSignInClient? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +35,7 @@ class Home : AppCompatActivity() {
         mealbtn = findViewById(R.id.mealbtn)
         bookdoctorbtn = findViewById(R.id.bookdoctorbtn)
 
+        auth =FirebaseAuth.getInstance()
         logout = findViewById(R.id.logout)
 
         logout.setOnClickListener(View.OnClickListener {
@@ -42,7 +44,8 @@ class Home : AppCompatActivity() {
             )
             googleSignInClient.signOut().addOnCompleteListener(OnCompleteListener { task->
                 if (task.isSuccessful){
-                    val i = Intent(this@Home, SelectScrn::class.java)
+                    auth.signOut()
+                    val i = Intent(this@Home, GoogleSignin::class.java)
                     startActivity(i)
                     finishAffinity()
                 }else{

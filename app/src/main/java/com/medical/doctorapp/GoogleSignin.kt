@@ -78,11 +78,21 @@ class GoogleSignin : AppCompatActivity() {
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
 
-                    Toast.makeText(applicationContext, "Success", Toast.LENGTH_SHORT).show()
-                    val user = auth.currentUser
-                    val i = Intent(this@GoogleSignin, Home::class.java)
+                    val b1 = task.getResult().additionalUserInfo?.isNewUser
+
+                    val i = Intent(this@GoogleSignin, Signup::class.java)
                     startActivity(i)
                     finishAffinity()
+//                    if (b1!!){
+//
+//                    }else{
+//                        Toast.makeText(applicationContext, "Success", Toast.LENGTH_SHORT).show()
+//                        val user = auth.currentUser
+//                        val i = Intent(this@GoogleSignin, Home::class.java)
+//                        startActivity(i)
+//                        finishAffinity()
+//                    }
+
 
                 } else {
                     Toast.makeText(applicationContext, "Faied", Toast.LENGTH_SHORT).show()
