@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#332EAFF0"
+    tools:context=".BookAppointment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bck"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_round_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Book a Doctor Appointment"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:fontFamily="@font/nunitobold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunitobold"
+            android:text="Select Doctor :"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/nunitomedium"
+            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:background="@drawable/selectbtn1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Date &amp; Time :"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:fontFamily="@font/nunitobold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:id="@+id/mydate"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/nunitomedium"
+            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:background="@drawable/selectbtn1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/nunitomedium"
+            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:background="@drawable/selectbtn1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="16dp"
+        android:text="Problem"
+        android:textColor="#000000"
+        android:fontFamily="@font/nunitobold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:gravity="start"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Text Here"
+        android:textColorHint="#000000"
+        android:background="@drawable/selectbtn1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/bookbtn"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/selectbtn2"
+        android:text="Book"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textAllCaps="false"/>
+
+
+
+</LinearLayout>

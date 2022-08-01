@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#332EAFF0"
+    tools:context=".PaymentDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_round_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Shipping &amp; Payment Details"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:fontFamily="@font/nunitobold"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/selectbtn1"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:hint="Enter Name"
+        android:fontFamily="@font/nunitomedium"
+        android:textSize="14dp"
+        android:text=""
+        android:textColorHint="#99000000"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/selectbtn1"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:hint="Enter Phone Number"
+        android:fontFamily="@font/nunitomedium"
+        android:textSize="14dp"
+        android:text=""
+        android:textColorHint="#99000000"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/selectbtn1"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:hint="Enter Address"
+        android:fontFamily="@font/nunitomedium"
+        android:textSize="14dp"
+        android:text=""
+        android:textColorHint="#99000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:fontFamily="@font/nunitobold"
+        android:text="Payment Details"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/selectbtn1"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:hint="Enter On Card"
+        android:fontFamily="@font/nunitomedium"
+        android:textSize="14dp"
+        android:text=""
+        android:textColorHint="#99000000"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/selectbtn1"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:hint="Enter Card Number"
+        android:fontFamily="@font/nunitomedium"
+        android:textSize="14dp"
+        android:text=""
+        android:textColorHint="#99000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/selectbtn1"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:hint="CVV"
+            android:fontFamily="@font/nunitomedium"
+            android:textSize="14dp"
+            android:text=""
+            android:textColorHint="#99000000"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="5"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/selectbtn1"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:hint="Expiry Date"
+            android:fontFamily="@font/nunitomedium"
+            android:textSize="14dp"
+            android:text=""
+            android:textColorHint="#99000000"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/orderconf"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/imgcircle2"
+        android:text="Confirm Order"
+        android:textSize="14dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

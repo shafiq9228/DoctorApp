@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#332EAFF0"
+    tools:context=".CategoryProduct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/bck"
+            android:src="@drawable/ic_round_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Category &amp; Products"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:fontFamily="@font/nunitobold"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/imgcircle"
+        android:elevation="10dp"
+        android:textColorHint="#99000000"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="14dp"
+        android:fontFamily="@font/nunitomedium"
+        android:hint="Search by Category"
+        android:paddingHorizontal="20dp"
+        android:drawableEnd="@drawable/ic_round_search_24"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productlist"
+        tools:listitem="@layout/productslist"
+        tools:itemCount="2"/>
+
+</LinearLayout>

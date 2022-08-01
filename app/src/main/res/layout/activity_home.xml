@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#332EAFF0"
+    android:orientation="vertical"
+    android:weightSum="9.1"
+    tools:context=".Home">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/logout"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_baseline_logout_24"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_round_menu_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:text="Home"
+                    android:fontFamily="@font/nunitobold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:layout_marginHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Hello\nMuzammil"
+                    android:textColor="#000000"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/nunitoextrabold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/prescriptionbtn"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:elevation="10dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/homebtn1"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:background="@drawable/imgcircle2"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:src="@drawable/ic_baseline_file_present_24" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nunitobold"
+                            android:text="Upload\nPrescription"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/categorybtn"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:elevation="10dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/homebtn2"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:background="@drawable/imgcircle"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:src="@drawable/ic_baseline_category_24" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nunitobold"
+                            android:text="Search\nby Category"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/homekitbtn"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/homebtn1"
+                        android:elevation="10dp"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:background="@drawable/imgcircle2"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:src="@drawable/ic_baseline_medical_services_24" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nunitobold"
+                            android:text="Order\nHome Kit"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/mealbtn"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="5"
+                        android:background="@drawable/homebtn1"
+                        android:elevation="10dp"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:background="@drawable/imgcircle2"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:src="@drawable/ic_baseline_food_bank_24" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nunitobold"
+                            android:text="Meal\nPlans"
+                            android:textColor="#000000"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:weightSum="7"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="3"
+                        android:id="@+id/bookdoctorbtn"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:elevation="10dp"
+                        android:background="@drawable/homebtn2"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:background="@drawable/imgcircle"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:src="@drawable/ic_baseline_assignment_24" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nunitobold"
+                            android:text="Book a Doctor \nAppointment"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.medical.doctorapp" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DoctorApp"
+        tools:targetApi="31" >
+        <activity
+            android:name=".Splash"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderConfirmed"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PatientAppointed"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppointmentConfirmed"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectedMealPlan"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MealPlans"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SelectedHomeKit"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderHomeKit"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectVitamins"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vitamins"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BookAppointment"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PaymentDetails"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DoctorHome"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CategoryProduct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Gallery"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GoogleSignin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UploadPrescription"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Signup"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectScrn"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GetStart"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#332EAFF0"
+    tools:context=".OrderConfirmed">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_round_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Order Confirmed"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:fontFamily="@font/nunitobold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="20dp"
+        android:elevation="10dp"
+        android:padding="20dp"
+        android:background="@drawable/homebtn1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shipping to :"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/nunitobold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:fontFamily="@font/nunitomedium"
+            android:text="# 6-1-1 to 4/A, DunDoo Enclave,\nStreet no-01 Behind Lakshmi Apartment"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
