@@ -36,9 +36,6 @@ class CategoryProduct : AppCompatActivity() {
         val pdmodel1 = ProductModel(R.drawable.ic_round_medication_liquid_24 , "Tablets")
         myproductlist.add(pdmodel1)
 
-        val pdmodel2 = ProductModel(R.drawable.ic_round_medication_liquid_24 , "Capsules")
-        myproductlist.add(pdmodel2)
-
         val pdmodel3 = ProductModel(R.drawable.ic_round_medication_liquid_24 , "Vitamins")
         myproductlist.add(pdmodel3)
 

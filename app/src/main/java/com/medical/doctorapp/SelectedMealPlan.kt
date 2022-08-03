@@ -16,7 +16,7 @@ class SelectedMealPlan : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_selected_meal_plan)
 
-        orderkitlist = findViewById(R.id.orderkitlist)
+        orderkitlist = findViewById(R.id.selectedmealplans)
         orderkitlist.layoutManager = LinearLayoutManager(this)
         meallist = ArrayList()
         addlist()
@@ -34,7 +34,7 @@ class SelectedMealPlan : AppCompatActivity() {
         var mealModel2 = MealModel(R.drawable.ic_baseline_lunch_dining_24 , "Dinner" , "Baked Chiken Parmesan \nwith Passley")
         meallist.add(mealModel2)
 
-        orderkitlist.adapter = MealAdapter(meallist)
+        orderkitlist.adapter = MealAdapter(meallist, this)
 
     }
 

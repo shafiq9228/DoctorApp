@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="18dp"
+    android:orientation="horizontal"
+    android:background="@drawable/homebtn1"
+    android:elevation="4dp"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="42dp"
+                android:id="@+id/itemimg"
+                android:layout_height="42dp"
+                android:src="@drawable/ic_round_medication_liquid_24"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="12dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:maxWidth="180dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:id="@+id/itemtitle"
+                    android:fontFamily="@font/nunitoextrabold"
+                    android:text="title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#575757"
+                    android:fontFamily="@font/nunitomedium"
+                    android:id="@+id/itemprice"
+                    android:text="price"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/nunitoregular"
+                    android:layout_height="wrap_content"
+                    android:textColor="#c4c4c4"
+                    android:id="@+id/itemdesc"
+                    android:layout_marginTop="4dp"
+                    android:text="Descripiton"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="right|center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="add"
+                android:id="@+id/addbtn"
+                android:textColor="@color/white"
+                android:background="@drawable/selectbtn2"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/layout2"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                android:background="@drawable/mbox"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:id="@+id/removeimg"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_baseline_remove_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:fontFamily="@font/nunitoextrabold"
+                    android:id="@+id/quantity"
+                    android:text="0"/>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/addimg"
+                    android:src="@drawable/ic_baseline_add_24"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+</LinearLayout>

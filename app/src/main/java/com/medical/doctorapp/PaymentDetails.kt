@@ -15,7 +15,8 @@ class PaymentDetails : AppCompatActivity() {
 
         orderconf = findViewById(R.id.orderconf)
         orderconf.setOnClickListener {
-            var i = Intent(this,OrderConfirmed::class.java)
+            var i = Intent(this,ProductSuccess::class.java)
+            i.putExtra("type", 0)
             startActivity(i)
         }
 

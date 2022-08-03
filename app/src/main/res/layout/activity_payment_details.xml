@@ -35,13 +35,14 @@
         android:layout_height="50dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="10dp"
+        android:enabled="false"
         android:background="@drawable/selectbtn1"
         android:elevation="10dp"
         android:padding="10dp"
         android:hint="Enter Name"
         android:fontFamily="@font/nunitomedium"
         android:textSize="14dp"
-        android:text=""
+        android:text="John"
         android:textColorHint="#99000000"/>
 
     <EditText
@@ -55,7 +56,8 @@
         android:hint="Enter Phone Number"
         android:fontFamily="@font/nunitomedium"
         android:textSize="14dp"
-        android:text=""
+        android:enabled="false"
+        android:text="8977221061"
         android:textColorHint="#99000000"/>
 
     <EditText
@@ -65,11 +67,12 @@
         android:layout_marginVertical="10dp"
         android:background="@drawable/selectbtn1"
         android:elevation="10dp"
+        android:enabled="false"
         android:padding="10dp"
         android:hint="Enter Address"
         android:fontFamily="@font/nunitomedium"
         android:textSize="14dp"
-        android:text=""
+        android:text="12-1-1119/85/a hyderabad"
         android:textColorHint="#99000000"/>
 
     <TextView
@@ -93,22 +96,10 @@
         android:hint="Enter On Card"
         android:fontFamily="@font/nunitomedium"
         android:textSize="14dp"
-        android:text=""
+        android:text="5622 8903 2832 2322"
+        android:enabled="false"
         android:textColorHint="#99000000"/>
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="10dp"
-        android:background="@drawable/selectbtn1"
-        android:elevation="10dp"
-        android:padding="10dp"
-        android:hint="Enter Card Number"
-        android:fontFamily="@font/nunitomedium"
-        android:textSize="14dp"
-        android:text=""
-        android:textColorHint="#99000000"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -131,7 +122,8 @@
             android:hint="CVV"
             android:fontFamily="@font/nunitomedium"
             android:textSize="14dp"
-            android:text=""
+            android:text="555"
+            android:enabled="false"
             android:textColorHint="#99000000"/>
 
         <EditText
@@ -139,6 +131,7 @@
             android:layout_height="50dp"
             android:layout_weight="5"
             android:layout_marginRight="20dp"
+
             android:layout_marginLeft="10dp"
             android:layout_marginVertical="10dp"
             android:background="@drawable/selectbtn1"
@@ -147,7 +140,8 @@
             android:hint="Expiry Date"
             android:fontFamily="@font/nunitomedium"
             android:textSize="14dp"
-            android:text=""
+            android:text="25/07"
+            android:enabled="false"
             android:textColorHint="#99000000"/>
 
     </LinearLayout>

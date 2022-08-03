@@ -8,12 +8,14 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.medical.doctorapp.FoodDetails
 import com.medical.doctorapp.Models.MealModel
 import com.medical.doctorapp.R
 import com.medical.doctorapp.SelectVitamins
 import com.medical.doctorapp.SelectedMealPlan
+import kotlin.math.acos
 
-class MealAdapter(var meallist : ArrayList<MealModel>) : RecyclerView.Adapter<MealAdapter.ViewHolder>() {
+class MealAdapter(var meallist : ArrayList<MealModel>,var activity: Activity) : RecyclerView.Adapter<MealAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MealAdapter.ViewHolder {
 
@@ -29,6 +31,11 @@ class MealAdapter(var meallist : ArrayList<MealModel>) : RecyclerView.Adapter<Me
         holder.mealdesc.text = ""+meallist[position].mealdesc
 
 
+        holder.itemView.setOnClickListener(View.OnClickListener {
+            val i = Intent(activity, FoodDetails::class.java)
+            i.putExtra("title", meallist[position].mealtitle)
+            activity.startActivity(i)
+        })
 
     }
 

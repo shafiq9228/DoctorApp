@@ -16,12 +16,14 @@ import java.util.*
 
 class Home : AppCompatActivity() {
 
-    lateinit var prescriptionbtn: LinearLayout
+
     lateinit var categorybtn: LinearLayout
     lateinit var homekitbtn: LinearLayout
     lateinit var mealbtn: LinearLayout
     lateinit var bookdoctorbtn: LinearLayout
     lateinit var logout: ImageView
+    lateinit var appointment: LinearLayout
+
     lateinit var auth: FirebaseAuth
     private var mGoogleSignInClient: GoogleSignInClient? = null
 
@@ -29,11 +31,14 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        prescriptionbtn = findViewById(R.id.prescriptionbtn)
+
         categorybtn = findViewById(R.id.categorybtn)
         homekitbtn = findViewById(R.id.homekitbtn)
         mealbtn = findViewById(R.id.mealbtn)
         bookdoctorbtn = findViewById(R.id.bookdoctorbtn)
+        appointment  = findViewById(R.id.appointments)
+
+
 
         auth =FirebaseAuth.getInstance()
         logout = findViewById(R.id.logout)
@@ -56,10 +61,11 @@ class Home : AppCompatActivity() {
 
         })
 
-        prescriptionbtn.setOnClickListener {
-            var i = Intent(this,UploadPrescription::class.java)
+        appointment.setOnClickListener(View.OnClickListener {
+            val i = Intent(this@Home, PatientAppointed::class.java)
             startActivity(i)
-        }
+        })
+
 
         categorybtn.setOnClickListener {
             var i = Intent(this,CategoryProduct::class.java)
@@ -72,7 +78,7 @@ class Home : AppCompatActivity() {
         }
 
         mealbtn.setOnClickListener {
-            var i = Intent(this,MealPlans::class.java)
+            var i = Intent(this,SelectedMealPlan::class.java)
             startActivity(i)
         }
 

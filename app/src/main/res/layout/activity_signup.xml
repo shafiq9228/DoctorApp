@@ -38,6 +38,23 @@
         android:textColorHint="#99000000"/>
 
 
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/selectbtn1"
+        android:fontFamily="@font/nunitomedium"
+        android:id="@+id/mname"
+        android:elevation="10dp"
+        android:padding="15dp"
+        android:hint="Enter Name"
+        android:text=""
+        android:textColor="#000000"
+        android:textColorHint="#4D000000"/>
+
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +67,8 @@
         android:padding="15dp"
         android:hint="Enter Mobile"
         android:text=""
-        android:textColorHint="#99000000"/>
+        android:textColor="#000000"
+        android:textColorHint="#4D000000"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -63,8 +81,8 @@
         android:elevation="10dp"
         android:padding="15dp"
         android:hint="Enter Age"
-        android:text=""
-        android:textColorHint="#99000000"/>
+        android:textColor="#000000"
+        android:textColorHint="#4D000000"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -77,8 +95,8 @@
         android:elevation="10dp"
         android:padding="15dp"
         android:hint="Enter Address"
-        android:text=""
-        android:textColorHint="#99000000"/>
+        android:textColor="#000000"
+        android:textColorHint="#4D000000"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -89,12 +107,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="12dp"
+            android:fontFamily="@font/nunitomedium"
             android:id="@+id/malecb"
             android:text="Male"/>
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitomedium"
             android:id="@+id/femalecb"
             android:text="Female"/>
 

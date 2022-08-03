@@ -46,16 +46,24 @@
             android:textColor="#000000"
             android:textSize="16dp" />
 
-        <TextView
+        <Spinner
             android:layout_width="150dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="10dp"
-            android:layout_gravity="center"
-            android:textSize="14dp"
-            android:textColor="#000000"
-            android:fontFamily="@font/nunitomedium"
-            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
-            android:background="@drawable/selectbtn1"/>
+            android:id="@+id/spinner"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/selectbtn1"
+            />
+
+<!--        <TextView-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textSize="14dp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:fontFamily="@font/nunitomedium"-->
+<!--            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"-->
+<!--            android:background="@drawable/selectbtn1"/>-->
 
     </LinearLayout>
 
@@ -83,6 +91,7 @@
             android:id="@+id/mydate"
             android:layout_marginRight="10dp"
             android:padding="10dp"
+            android:hint="date"
             android:layout_weight="5"
             android:layout_gravity="center"
             android:textSize="14dp"
@@ -91,17 +100,34 @@
             android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
             android:background="@drawable/selectbtn1"/>
 
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="35dp"
+            android:id="@+id/dtime"
             android:layout_marginRight="10dp"
+            android:padding="10dp"
             android:layout_weight="5"
+            android:hint="time"
             android:layout_gravity="center"
             android:textSize="14dp"
             android:textColor="#000000"
             android:fontFamily="@font/nunitomedium"
             android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
             android:background="@drawable/selectbtn1"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_weight="5"-->
+<!--            android:id="@+id/dtime"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textSize="14dp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:fontFamily="@font/nunitomedium"-->
+<!--            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"-->
+<!--            android:background="@drawable/selectbtn1"/>-->
 
     </LinearLayout>
 
@@ -121,7 +147,7 @@
         android:gravity="start"
         android:layout_marginHorizontal="20dp"
         android:hint="Text Here"
-        android:textColorHint="#000000"
+        android:textColorHint="#c4c4c4"
         android:background="@drawable/selectbtn1"/>
 
     <androidx.appcompat.widget.AppCompatButton

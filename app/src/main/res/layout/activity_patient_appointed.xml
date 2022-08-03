@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="List of Patient Appointed"
+            android:text="List of Appointed"
             android:textColor="#000000"
             android:textSize="20dp"
             android:fontFamily="@font/nunitobold"/>
@@ -34,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/appointedlist"
-        tools:listitem="@layout/patientappointedlist"
+        tools:listitem="@layout/doctoritem"
         tools:itemCount="2"/>
 
 </LinearLayout>

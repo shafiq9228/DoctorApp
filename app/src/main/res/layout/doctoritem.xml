@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+   android:paddingHorizontal="12dp"
+    android:layout_marginVertical="8dp"
+    android:layout_marginHorizontal="12dp"
+    android:elevation="4dp"
+
+    android:paddingVertical="20dp"
+    android:background="@drawable/doctorcurve"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/doctorimg"
+            android:layout_gravity="right"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/doctorname"
+                android:textColor="#5543FF"
+                android:textSize="16sp"
+                android:fontFamily="@font/nunitoextrabold"
+                android:text="Dr. Chris"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#A1A1A1"
+                android:id="@+id/doctortype"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/nunitoregular"
+                android:text="Dentist"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+
+                android:background="#575757"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_access_time_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="#5543FF"
+                    android:id="@+id/doctordate"
+                    android:text="12/03/2022" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/doctorstatus"
+                    android:fontFamily="@font/nunitoregular"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="#5543FF"
+                    android:text="Confirmed" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

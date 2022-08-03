@@ -71,8 +71,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="8"
+                android:layout_height="wrap_content"
+
                 android:layout_marginTop="10dp"
                 android:orientation="vertical">
 
@@ -80,60 +80,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="12dp"
                     android:orientation="horizontal"
                     android:weightSum="10">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="160dp"
-                        android:id="@+id/prescriptionbtn"
-                        android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginTop="5dp"
-                        android:elevation="10dp"
-                        android:layout_weight="5"
-                        android:background="@drawable/homebtn1"
-                        android:orientation="vertical"
-                        android:padding="20dp">
-
-                        <LinearLayout
-                            android:layout_width="54dp"
-                            android:layout_height="54dp"
-                            android:background="@drawable/imgcircle2"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:layout_width="34dp"
-                                android:layout_height="34dp"
-                                android:src="@drawable/ic_baseline_file_present_24" />
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:fontFamily="@font/nunitobold"
-                            android:text="Upload\nPrescription"
-                            android:textColor="#000000"
-                            android:textSize="14dp" />
-
-
-                    </LinearLayout>
-
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="160dp"
+                        android:layout_height="wrap_content"
                         android:id="@+id/categorybtn"
                         android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginTop="5dp"
                         android:elevation="10dp"
                         android:layout_weight="5"
                         android:background="@drawable/homebtn2"
                         android:orientation="vertical"
-                        android:padding="20dp">
+                        android:padding="30dp">
 
                         <LinearLayout
                             android:layout_width="54dp"
@@ -155,10 +116,46 @@
                             android:fontFamily="@font/nunitobold"
                             android:text="Search\nby Category"
                             android:textColor="@color/white"
-                            android:textSize="14dp" />
+                            android:textSize="12sp" />
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:id="@+id/bookdoctorbtn"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:elevation="10dp"
+                        android:background="@drawable/homebtn2"
+                        android:orientation="vertical"
+                        android:padding="30dp">
+
+                        <LinearLayout
+                            android:layout_width="54dp"
+                            android:layout_height="54dp"
+                            android:background="@drawable/imgcircle"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="34dp"
+                                android:layout_height="34dp"
+                                android:background="@drawable/imgcircle"
+                                android:src="@drawable/ic_baseline_assignment_24" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/nunitobold"
+                            android:text="Book a Doctor \nAppointment"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -203,7 +200,7 @@
                             android:fontFamily="@font/nunitobold"
                             android:text="Order\nHome Kit"
                             android:textColor="#000000"
-                            android:textSize="14dp" />
+                            android:textSize="12sp" />
 
 
                     </LinearLayout>
@@ -241,7 +238,7 @@
                             android:fontFamily="@font/nunitobold"
                             android:text="Meal\nPlans"
                             android:textColor="#000000"
-                            android:textSize="14dp" />
+                            android:textSize="12sp" />
 
                     </LinearLayout>
 
@@ -254,19 +251,17 @@
                     android:weightSum="7"
                     android:orientation="horizontal">
 
+
                     <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="160dp"
-                        android:layout_weight="3"
-                        android:id="@+id/bookdoctorbtn"
-                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
                         android:layout_marginHorizontal="10dp"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginTop="5dp"
+                        android:id="@+id/appointments"
                         android:elevation="10dp"
                         android:background="@drawable/homebtn2"
                         android:orientation="vertical"
-                        android:padding="20dp">
+                        android:padding="40dp">
 
                         <LinearLayout
                             android:layout_width="54dp"
@@ -277,7 +272,7 @@
                             <ImageView
                                 android:layout_width="34dp"
                                 android:layout_height="34dp"
-                                android:src="@drawable/ic_baseline_assignment_24" />
+                                android:src="@drawable/ic_baseline_category_24" />
 
                         </LinearLayout>
 
@@ -286,11 +281,12 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:fontFamily="@font/nunitobold"
-                            android:text="Book a Doctor \nAppointment"
+                            android:text="Appointments"
                             android:textColor="@color/white"
-                            android:textSize="14dp" />
+                            android:textSize="12sp" />
 
                     </LinearLayout>
+
 
                 </LinearLayout>
 

@@ -27,7 +27,8 @@ class ProductAdapter(var arraylist: ArrayList<ProductModel>, var activity: Activ
         holder.productimg.setImageResource(arraylist[position].img)
 
         holder.itemView.setOnClickListener(View.OnClickListener {
-            val i= Intent(activity, SelectVitamins::class.java)
+            val i= Intent(activity, Category2Activity::class.java)
+            i.putExtra("type", ""+arraylist[position].name)
             activity.startActivity(i)
         })
 
